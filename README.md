@@ -7,7 +7,7 @@ The analysis follows an end-to-end data analytics workflow, starting with data q
 
 The objective is to transform raw transactional data into actionable insights that can support decision-making across sales, customer experience, seller performance, and logistics operations.
 
-🎯** Business Objectives**
+**🎯** Business Objectives****
 
 The analysis focuses on the following objectives:
 
