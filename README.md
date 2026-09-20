@@ -1,165 +1,203 @@
-# 🛒 Olist E-commerce Sales Analysis
+Olist E-Commerce Sales Analysis
+📌 Project Overview
 
-## 📌 Project Overview
+This project analyzes the Brazilian Olist E-Commerce dataset to identify business insights across sales performance, customer behavior, seller performance, customer satisfaction, delivery efficiency, payment behavior, and logistics costs.
 
-This project analyzes the Brazilian Olist E-commerce dataset to uncover actionable business insights related to sales performance, customer behavior, seller performance, customer satisfaction, delivery efficiency, and logistics costs.
+The analysis follows an end-to-end data analytics workflow, starting with data quality assessment and preprocessing in Python, followed by business-focused analysis using MySQL, and concluding with an interactive Power BI dashboard for KPI monitoring and data visualization.
 
-The project follows an end-to-end data analysis workflow, beginning with data quality assessment and cleaning in Python, followed by business analysis using MySQL. The objective is to support data-driven decision-making by answering key business questions commonly encountered in e-commerce organizations.
+The objective is to transform raw transactional data into actionable insights that can support decision-making across sales, customer experience, seller performance, and logistics operations.
 
+🎯 Business Objectives
 
-## 🎯 Business Objective
+The analysis focuses on the following objectives:
 
-The primary objectives of this project are to:
+Identify the highest revenue-generating product categories.
+Evaluate sales performance across customer states and sellers.
+Analyze customer purchasing and payment behavior.
+Measure customer satisfaction using review ratings.
+Evaluate delivery performance and seller efficiency.
+Identify high-value customers based on total spending.
+Analyze freight costs relative to product prices.
+Develop an interactive dashboard to monitor key business performance indicators.
+🔄 Project Workflow
+Step 1 – Data Quality Assessment & Cleaning (Python)
 
-- Identify the highest revenue-generating product categories.
-- Evaluate sales performance across different states and sellers.
-- Understand customer purchasing and payment behavior.
-- Measure customer satisfaction using review ratings.
-- Analyze delivery performance and seller efficiency.
-- Identify high-value customers for retention strategies.
-- Evaluate logistics costs by comparing freight charges with product prices.
+The raw Olist datasets were imported into Python using Pandas for data quality assessment and preprocessing.
 
-## 🔄 Project Workflow
+The following activities were performed:
 
-### Step 1 – Data Quality Assessment (Python)
+Inspected dataset structure and data types.
+Identified missing and duplicate records.
+Validated key identifier columns.
+Standardized date and time fields.
+Cleaned and standardized product category values.
+Reviewed data consistency across relational datasets.
+Prepared and exported cleaned datasets for SQL analysis.
+Step 2 – Business Analysis (MySQL)
 
-The raw CSV files were imported into Python using Pandas for data quality assessment and preprocessing.
+The cleaned datasets were loaded into MySQL for structured business analysis.
 
-The following checks were performed:
+SQL was used to investigate sales, customer, seller, payment, review, and delivery-related questions through:
 
-- Checked data types
-- Identified missing values
-- Removed duplicate records
-- Validated key columns
-- Standardized date formats
-- Cleaned product category names
-- Exported cleaned datasets for SQL analysis
-  
-### Step 2 – SQL Business Analysis (MySQL)
+Table joins
+Common Table Expressions (CTEs)
+Aggregate functions
+Window functions
+Ranking
+GROUP BY and HAVING
+Sorting and filtering
+Date calculations
+Revenue and performance metrics
 
-The cleaned datasets were imported into MySQL, where SQL was used to answer business-focused analytical questions using joins, aggregate functions, window functions, CTEs, and date functions.
+The analysis was designed around business questions rather than purely technical data exploration.
 
-### Step 3 – Dashboard (Upcoming)
+Step 3 – Interactive Dashboard (Power BI)
 
-The SQL analysis will be extended by developing an interactive Power BI dashboard to visualize KPIs and business insights.
+The Python preprocessing and SQL analysis were extended into an interactive Power BI dashboard to provide a consolidated view of key e-commerce performance metrics.
 
-# 🛠️ Tools & Technologies
+Dashboard KPIs
+Total Revenue
+Total Orders
+Average Order Value
+Average Review Score
+Average Delivery Days
+Dashboard Visualizations
+Monthly Revenue Trend
+Revenue by Product Category
+Revenue by Customer State
+Payment Method Distribution
+Top 10 Sellers by Revenue
+Average Delivery Time by State
+Interactive Filters
+Order Date
+Customer State
+Product Category
+Payment Type
 
-- Python
-- Pandas
-- MySQL
-- DBeaver
-- Git & GitHub
-- Power BI (In Progress)
+The dashboard enables users to interactively explore sales performance, customer satisfaction, seller contribution, payment behavior, and delivery performance.
 
-# 📂 Dataset
+🛠️ Tools & Technologies
+Python — Data quality assessment, preprocessing, and analysis
+Pandas — Data cleaning and transformation
+MySQL — Business analysis and SQL-based data exploration
+Power BI — KPI development, interactive dashboards, and data visualization
+DBeaver — SQL development and database analysis
+Git & GitHub — Version control and project documentation
+📂 Dataset
 
-**Dataset:** Olist Brazilian E-commerce Dataset
+Dataset: Brazilian E-Commerce Public Dataset by Olist
 
-**Source:** https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+Source: Kaggle — Olist Brazilian E-Commerce Dataset (https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
-Dataset contains:
+The dataset contains approximately 100K orders distributed across multiple relational tables covering:
 
-- 100K+ Orders
-- Multiple relational tables
-- Customer, Product, Seller, Payment, Review and Order information
+Orders
+Customers
+Products
+Sellers
+Payments
+Reviews
+Order Items
 
-# 📊 Business Questions
+The relational structure enables analysis across different stages of the e-commerce lifecycle, from purchase and payment to delivery and customer feedback.
 
-### 1. Which product categories generate the highest revenue?
+📊 Business Questions
+1. Which product categories generate the highest revenue?
 
-**Objective:**
-Identify the most profitable product categories to support inventory planning and marketing strategies.
+Objective: Identify high-revenue product categories to understand category-level sales performance and support inventory and marketing decisions.
 
-### 2. Which states contribute the highest revenue?
+2. Which states contribute the highest revenue?
 
-**Objective:**
-Understand regional sales performance to optimize market expansion and resource allocation.
+Objective: Evaluate regional sales performance and identify differences in customer demand across states.
 
-### 3. Which sellers generate the highest sales revenue?
+3. Which sellers generate the highest sales revenue?
 
-**Objective:**
-Identify top-performing sellers and evaluate their contribution to overall business revenue.
+Objective: Identify top-performing sellers and assess their contribution to overall sales.
 
-### 4. Which payment methods are most preferred by customers?
+4. Which payment methods are most preferred by customers?
 
-**Objective:**
-Analyze customer payment preferences to improve payment experience and optimize payment partnerships.
+Objective: Analyze payment behavior to understand customer payment preferences and the distribution of payment value across payment methods.
 
-### 5. Which product categories receive the highest and lowest customer ratings?
+5. Which product categories receive the highest and lowest customer ratings?
 
-**Objective:**
-Evaluate customer satisfaction across different product categories to identify quality improvement opportunities.
+Objective: Evaluate customer satisfaction across product categories and identify categories with differences in review performance.
 
-### 6. Which states have the highest average customer review score?
+6. Which states have the highest average customer review score?
 
-**Objective:**
-Measure customer satisfaction across different regions to identify high-performing and underperforming markets.
+Objective: Compare customer satisfaction across geographic markets using average review scores.
 
-### 7. How long does delivery take on average?
+7. How long does delivery take on average?
 
-**Objective:**
-Measure delivery efficiency and establish a benchmark for logistics performance.
+Objective: Measure delivery duration and establish an overall benchmark for delivery performance.
 
-### 8. Which sellers have the fastest average delivery time?
+8. Which sellers have the fastest average delivery time?
 
-**Objective:**
-Identify sellers with efficient delivery operations and recognize best-performing logistics partners.
+Objective: Compare seller-level delivery performance and identify differences in average delivery duration.
 
-### 9. Who are the most valuable customers based on total spending?
+9. Who are the most valuable customers based on total spending?
 
-**Objective:**
-Identify high-value customers for customer retention programs and personalized marketing campaigns.
+Objective: Identify high-value customers based on their total spending to support potential customer retention and segmentation strategies.
 
-### 10. Which product categories have the highest freight cost relative to product price?
+10. Which product categories have the highest freight cost relative to product price?
 
-**Objective:**
-Evaluate logistics efficiency by identifying categories where shipping costs consume a large proportion of product value.
+Objective: Evaluate the relationship between freight costs and product prices to identify categories with relatively high logistics costs.
 
-# 💡 Key Business Insights
+💡 Key Business Insights
 
-- High-revenue product categories contribute significantly to overall business sales and should be prioritized for inventory and promotional campaigns.
-- Revenue varies across states, highlighting regional differences in customer demand.
-- A small group of sellers contributes a significant share of total sales revenue.
-- Credit cards are the most frequently used payment method, indicating customer preference for flexible payment options.
-- Customer satisfaction differs across product categories, helping identify areas requiring product quality improvements.
-- Delivery performance varies among sellers, enabling the identification of logistics best practices.
-- A small segment of customers generates a disproportionately high share of total revenue, supporting customer loyalty initiatives.
-- Certain product categories have disproportionately high freight costs relative to product prices, indicating opportunities to optimize shipping strategies and improve profitability.
+The analysis examines the following business areas:
 
+Revenue concentration across product categories.
+Regional differences in sales performance.
+Seller contribution to overall revenue.
+Customer payment preferences.
+Variation in customer satisfaction across product categories.
+Geographic differences in customer review scores.
+Overall delivery efficiency and delivery-time variation.
+Differences in seller delivery performance.
+Customer spending concentration and high-value customer segments.
+Freight cost exposure across product categories.
 
-# 🧠 SQL Concepts Used
+Note: Quantitative findings and specific business recommendations will be added based on the validated SQL analysis and Power BI results.
 
-- INNER JOIN
-- Common Table Expressions (CTE)
-- Aggregate Functions
-- Window Functions (RANK)
-- GROUP BY
-- HAVING
-- ORDER BY
-- LIMIT
-- DATEDIFF
-- SUM
-- AVG
-- COUNT
-- ROUND
-
-# 📁 Repository Structure
-
-Olist-Ecommerce-SQL-Analysis/
+🧠 SQL Concepts Used
+INNER JOIN
+Common Table Expressions (CTEs)
+Aggregate Functions
+Window Functions
+RANK()
+GROUP BY
+HAVING
+ORDER BY
+LIMIT
+DATEDIFF
+SUM()
+AVG()
+COUNT()
+ROUND()
+📁 Repository Structure
+Olist-E-commerce-Analysis/
 │
 ├── Data_Cleaning_Python.ipynb
 ├── Olist_Ecommerce_SQL_Analysis.sql
 ├── README.md
+│
+└── Data/
+    ├── olist_orders_clean.gz
+    ├── olist_order_items_clean.gz
+    ├── Olist_customers_clean.gz
+    ├── olist__products_clean.gz
+    ├── olist_payments_clean.gz
+    ├── olist_reviews_clean.gz
+    └── olist_sellers_clean.gz
+🚀 Future Enhancements
 
+Potential extensions to the analysis include:
 
-# 🚀 Future Enhancements
-
-- Develop an interactive Power BI dashboard.
-- Build KPI cards and executive dashboards.
-- Perform customer segmentation using RFM analysis.
-- Conduct sales forecasting using Python.
-- Optimize SQL queries for improved performance.
+Customer segmentation using RFM analysis.
+Sales forecasting using Python.
+Deeper analysis of customer purchasing behavior.
+Seller performance benchmarking.
+Optimization of SQL queries for improved analytical performance
 
 # 👩‍💻 Author
 
