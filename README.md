@@ -1,13 +1,13 @@
-Olist E-Commerce Sales Analysis
-📌 Project Overview
-
+**Olist E-Commerce Sales Analysis**
+📌 **Project Overview
+**
 This project analyzes the Brazilian Olist E-Commerce dataset to identify business insights across sales performance, customer behavior, seller performance, customer satisfaction, delivery efficiency, payment behavior, and logistics costs.
 
 The analysis follows an end-to-end data analytics workflow, starting with data quality assessment and preprocessing in Python, followed by business-focused analysis using MySQL, and concluding with an interactive Power BI dashboard for KPI monitoring and data visualization.
 
 The objective is to transform raw transactional data into actionable insights that can support decision-making across sales, customer experience, seller performance, and logistics operations.
 
-🎯 Business Objectives
+🎯** Business Objectives**
 
 The analysis focuses on the following objectives:
 
@@ -19,8 +19,8 @@ Evaluate delivery performance and seller efficiency.
 Identify high-value customers based on total spending.
 Analyze freight costs relative to product prices.
 Develop an interactive dashboard to monitor key business performance indicators.
-🔄 Project Workflow
-Step 1 – Data Quality Assessment & Cleaning (Python)
+🔄 **Project Workflow**
+**Step 1 – Data Quality Assessment & Cleaning (Python)**
 
 The raw Olist datasets were imported into Python using Pandas for data quality assessment and preprocessing.
 
@@ -33,7 +33,7 @@ Standardized date and time fields.
 Cleaned and standardized product category values.
 Reviewed data consistency across relational datasets.
 Prepared and exported cleaned datasets for SQL analysis.
-Step 2 – Business Analysis (MySQL)
+**Step 2 – Business Analysis (MySQL)**
 
 The cleaned datasets were loaded into MySQL for structured business analysis.
 
@@ -51,7 +51,7 @@ Revenue and performance metrics
 
 The analysis was designed around business questions rather than purely technical data exploration.
 
-Step 3 – Interactive Dashboard (Power BI)
+**Step 3 – Interactive Dashboard (Power BI)**
 
 The Python preprocessing and SQL analysis were extended into an interactive Power BI dashboard to provide a consolidated view of key e-commerce performance metrics.
 
@@ -76,18 +76,18 @@ Payment Type
 
 The dashboard enables users to interactively explore sales performance, customer satisfaction, seller contribution, payment behavior, and delivery performance.
 
-🛠️ Tools & Technologies
+**🛠️ Tools & Technologies**
 Python — Data quality assessment, preprocessing, and analysis
 Pandas — Data cleaning and transformation
 MySQL — Business analysis and SQL-based data exploration
 Power BI — KPI development, interactive dashboards, and data visualization
 DBeaver — SQL development and database analysis
 Git & GitHub — Version control and project documentation
-📂 Dataset
+**📂 Dataset**
 
-Dataset: Brazilian E-Commerce Public Dataset by Olist
+**Dataset:** Brazilian E-Commerce Public Dataset by Olist
 
-Source: Kaggle — Olist Brazilian E-Commerce Dataset (https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+**Source:** Kaggle — Olist Brazilian E-Commerce Dataset (https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
 The dataset contains approximately 100K orders distributed across multiple relational tables covering:
 
@@ -100,8 +100,8 @@ Reviews
 Order Items
 
 The relational structure enables analysis across different stages of the e-commerce lifecycle, from purchase and payment to delivery and customer feedback.
-
-📊 Business Questions
+**
+📊 Business Questions**
 1. Which product categories generate the highest revenue?
 
 Objective: Identify high-revenue product categories to understand category-level sales performance and support inventory and marketing decisions.
@@ -142,7 +142,7 @@ Objective: Identify high-value customers based on their total spending to suppor
 
 Objective: Evaluate the relationship between freight costs and product prices to identify categories with relatively high logistics costs.
 
-💡 Key Business Insights
+**💡 Key Business Insights**
 
 The analysis examines the following business areas:
 
@@ -158,8 +158,8 @@ Customer spending concentration and high-value customer segments.
 Freight cost exposure across product categories.
 
 Note: Quantitative findings and specific business recommendations will be added based on the validated SQL analysis and Power BI results.
-
-🧠 SQL Concepts Used
+**
+🧠 SQL Concepts Used**
 INNER JOIN
 Common Table Expressions (CTEs)
 Aggregate Functions
@@ -174,7 +174,7 @@ SUM()
 AVG()
 COUNT()
 ROUND()
-📁 Repository Structure
+📁 **Repository Structure**
 Olist-E-commerce-Analysis/
 │
 ├── Data_Cleaning_Python.ipynb
@@ -189,7 +189,7 @@ Olist-E-commerce-Analysis/
     ├── olist_payments_clean.gz
     ├── olist_reviews_clean.gz
     └── olist_sellers_clean.gz
-🚀 Future Enhancements
+**🚀 Future Enhancements**
 
 Potential extensions to the analysis include:
 
