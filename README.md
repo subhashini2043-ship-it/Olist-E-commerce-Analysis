@@ -160,8 +160,8 @@ Customer spending concentration and high-value customer segments.
 Freight cost exposure across product categories.
 
 Note: Quantitative findings and specific business recommendations will be added based on the validated SQL analysis and Power BI results.
-**
-🧠 SQL Concepts Used**
+
+🧠 **SQL Concepts Used**
 INNER JOIN
 Common Table Expressions (CTEs)
 Aggregate Functions
@@ -176,21 +176,7 @@ SUM()
 AVG()
 COUNT()
 ROUND()
-📁 **Repository Structure**
-Olist-E-commerce-Analysis/
-│
-├── Data_Cleaning_Python.ipynb
-├── Olist_Ecommerce_SQL_Analysis.sql
-├── README.md
-│
-└── Data/
-    ├── olist_orders_clean.gz
-    ├── olist_order_items_clean.gz
-    ├── Olist_customers_clean.gz
-    ├── olist__products_clean.gz
-    ├── olist_payments_clean.gz
-    ├── olist_reviews_clean.gz
-    └── olist_sellers_clean.gz
+
 **🚀 Future Enhancements**
 
 Potential extensions to the analysis include:
