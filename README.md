@@ -1,13 +1,12 @@
 **Olist E-Commerce Sales Analysis**
-📌 **Project Overview
-**
+📌 **Project Overview**
 This project analyzes the Brazilian Olist E-Commerce dataset to identify business insights across sales performance, customer behavior, seller performance, customer satisfaction, delivery efficiency, payment behavior, and logistics costs.
 
 The analysis follows an end-to-end data analytics workflow, starting with data quality assessment and preprocessing in Python, followed by business-focused analysis using MySQL, and concluding with an interactive Power BI dashboard for KPI monitoring and data visualization.
 
 The objective is to transform raw transactional data into actionable insights that can support decision-making across sales, customer experience, seller performance, and logistics operations.
 
-**🎯** Business Objectives****
+🎯**Business Objectives**
 
 The analysis focuses on the following objectives:
 
@@ -19,7 +18,9 @@ Evaluate delivery performance and seller efficiency.
 Identify high-value customers based on total spending.
 Analyze freight costs relative to product prices.
 Develop an interactive dashboard to monitor key business performance indicators.
+
 🔄 **Project Workflow**
+
 **Step 1 – Data Quality Assessment & Cleaning (Python)**
 
 The raw Olist datasets were imported into Python using Pandas for data quality assessment and preprocessing.
@@ -33,6 +34,7 @@ Standardized date and time fields.
 Cleaned and standardized product category values.
 Reviewed data consistency across relational datasets.
 Prepared and exported cleaned datasets for SQL analysis.
+
 **Step 2 – Business Analysis (MySQL)**
 
 The cleaned datasets were loaded into MySQL for structured business analysis.
